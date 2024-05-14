@@ -1,0 +1,13 @@
+:root{
+    color-scheme: light dark;
+}
+
+body{
+    background-color: black;
+    display: grid;
+    place-content: center;
+    color: #18d412;
+}
+.Error{
+    color: red;
+}

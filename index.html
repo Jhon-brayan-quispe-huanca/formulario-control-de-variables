@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="./scrip.php" method="post">
+        <fieldset>
+            <legend>Ingresa tu información en el siguiente formulario</legend>
+            <p>
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" maxlength="100" placeholder="Nombre">
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" size="20" maxlength="100" placeholder="Email">
+            </p>
+            <p>
+                <label>Género:</label>
+                <input type="radio" name="gender" value="M">Masculino
+                <input type="radio" name="gender" value="F">Femenino
+            </p>
+            <p>
+                <label for="age">Edad:</label>
+                <select name="age">
+                    <option value="0-29">menos de 30</option>
+                    <option value="30-60">Entre 30 y 60</option>
+                    <option value="60+">más de 60</option>
+                </select>
+            </p>
+            <p>
+                <label for="comments">Comentarios:</label>
+                <textarea name="comments" rows="3" cols="40"></textarea>
+            </p>
+        </fieldset>
+        <p align="center"><input type="submit" value="Enviar mi Información"></p>
+    </form>
+</body>
+</html>
